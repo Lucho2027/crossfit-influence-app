@@ -1,72 +1,63 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { NiceDate, Hyph } from '../Utils/Utils'
-import StyleIcon from '../StyleIcon/StyleIcon'
-import './ArticleListItem.css'
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { NiceDate, Hyph } from "../Utils/Utils";
+import StyleIcon from "../StyleIcon/StyleIcon";
+import "./WorkoutListItem.css";
 
-export default class ArticleListItem extends Component {
+export default class WorkoutListItem extends Component {
   render() {
-    const { article } = this.props
+    const { workout } = this.props;
     return (
-      <Link to={`/article/${article.id}`} className='ArticleListItem'>
-        <header className='ArticleListItem__header'>
-          <h2 className='ArticleListItem__heading'>
-            {article.title}
-          </h2>
-          <ArticleDate article={article} />
+      <Link to={`/workout/${workout.id}`} className="WorkoutListItem">
+        <header className="WorkoutListItem__header">
+          <h2 className="WorkoutListItem__heading">{workout.title}</h2>
+          <WorkoutDate workout={workout} />
         </header>
-        <footer className='ArticleListItem__footer'>
-          <ArticleStyle article={article} />
-          {article.author.id && <>
-            <Hyph />
-            <ArticleAuthor article={article} />
-          </>}
-          <ArticleCommentCount article={article} />
+        <footer className="WorkoutListItem__footer">
+          <WorkoutStyle workout={workout} />
+          {workout.author.id && (
+            <>
+              <Hyph />
+              <WorkoutAuthor workout={workout} />
+            </>
+          )}
+          <WorkoutCommentCount workout={workout} />
         </footer>
       </Link>
-    )
+    );
   }
 }
 
-function ArticleStyle({ article }) {
+function WorkoutStyle({ workout }) {
   return (
-    <span className='ArticleListItem__style'>
-      <StyleIcon style={article.style} />
-      {' '}
-      {article.style}
+    <span className="WorkoutListItem__style">
+      <StyleIcon style={workout.style} /> {workout.style}
     </span>
-  )
+  );
 }
 
-function ArticleDate({ article }) {
+function WorkoutDate({ workout }) {
   return (
-    <span className='ArticleListItem__date'>
-      <NiceDate
-        date={article.date_created}
-      />
+    <span className="WorkoutListItem__date">
+      <NiceDate date={workout.date_created} />
     </span>
-  )
+  );
 }
 
-function ArticleAuthor({ article }) {
+function WorkoutAuthor({ workout }) {
   return (
-    <span className='ArticleListItem__author'>
-      {article.author.full_name}
-    </span>
-  )
+    <span className="WorkoutListItem__author">{workout.author.full_name}</span>
+  );
 }
 
-function ArticleCommentCount({ article }) {
+function WorkoutCommentCount({ workout }) {
   return (
-    <span
-      className='ArticleListItem__comment-count fa-layers fa-fw'
-    >
-      <FontAwesomeIcon size='lg' icon='comment' />
-      <span
-        className='fa-layers-text fa-inverse'>
-        {article.number_of_comments}
+    <span className="WorkoutListItem__comment-count fa-layers fa-fw">
+      <FontAwesomeIcon size="lg" icon="comment" />
+      <span className="fa-layers-text fa-inverse">
+        {workout.number_of_comments}
       </span>
     </span>
-  )
+  );
 }
