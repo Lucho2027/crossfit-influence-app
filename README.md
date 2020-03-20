@@ -1,4 +1,4 @@
-# Blogful client
+# influence client
 
 ## Scripts
 
