@@ -20,6 +20,7 @@ export default class Header extends Component {
 				<Link onClick={this.handleLogoutClick} to="/">
 					Logout
 				</Link>
+				<Link to="/workoutofday">Work Out of the Day</Link>
 			</div>
 		)
 	}
@@ -39,7 +40,8 @@ export default class Header extends Component {
 			<nav className="Header">
 				<h1>
 					<Link to="/">
-						<FontAwesomeIcon className="green" icon="frog" /> influence Client
+						{/* <FontAwesomeIcon className="green" icon="cross" /> */}
+						Influence
 					</Link>
 				</h1>
 				{TokenService.hasAuthToken()
