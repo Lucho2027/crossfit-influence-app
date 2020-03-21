@@ -20,7 +20,6 @@ export default class Header extends Component {
 				<Link onClick={this.handleLogoutClick} to="/">
 					Logout
 				</Link>
-				<Link to="/workoutofday">Work Out of the Day</Link>
 			</div>
 		)
 	}
@@ -31,6 +30,14 @@ export default class Header extends Component {
 				<Link to="/register">Register</Link>
 				<Hyph />
 				<Link to="/login">Log in</Link>
+				<Hyph />
+				<Link to="/workoutofday">Daily Workout</Link>
+				<Hyph />
+				<Link to="/about">About</Link>
+				<Hyph />
+				<Link to="/nutrition">Nutrition-n-Cross-Fit</Link>
+				<Hyph />
+				<Link to="/staff">Staff</Link>
 			</div>
 		)
 	}

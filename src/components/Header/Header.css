@@ -1,44 +1,49 @@
 .Header {
-  height: 40px;
-  display: flex;
-  align-items: normal;
-  justify-content: space-between;
+	height: 40px;
+	display: flex;
+	align-items: normal;
+	justify-content: space-between;
 }
 
 .Header h1 {
-  margin: 0;
+	margin: 0;
 }
 
 .Header h1 a {
-  text-decoration: none;
+	text-decoration: none;
+	font-size: 4vh;
 }
 
 .Header a {
-  color: #444;
+	color: #444;
+	font-size: 2vh;
 }
-
 .Header__not-logged-in {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .Header__not-logged-in .Hyph {
-  display: none;
+	display: none;
 }
 
 @media screen and (min-width: 450px) {
-  .Header {
-    align-items: baseline;
-  }
-  .Header h1 {
-    font-size: 22pt;
-  }
+	.Header {
+		align-items: baseline;
+	}
+	.Header h1 {
+		font-size: 5vh;
+	}
+	.Header a {
+		color: #444;
+		font-size: 2vh;
+	}
 
-  .Header__not-logged-in {
-    flex-direction: row;
-  }
+	.Header__not-logged-in {
+		flex-direction: row;
+	}
 
-  .Header__not-logged-in .Hyph {
-    display: initial;
-  }
+	.Header__not-logged-in .Hyph {
+		display: initial;
+	}
 }
