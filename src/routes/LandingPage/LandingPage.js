@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { Section } from "../../components/Utils/Utils"
-
+import { Link } from "react-router-dom"
 export default class LandingPage extends Component {
 	static defaultProps = {
 		location: {},
@@ -19,7 +19,7 @@ export default class LandingPage extends Component {
 						Accuracy, Agility, Coordination,Balance, Speed, Power,
 						flexibility,Strength, Stamina, & Cardiorespiritory Endurance
 					</h2>
-					<button> Join Now</button>
+					<Link to="/register">Register</Link>
 				</header>
 				<section>
 					<header>

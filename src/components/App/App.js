@@ -5,7 +5,8 @@ import PrivateRoute from "../Utils/PrivateRoute"
 import PublicOnlyRoute from "../Utils/PublicOnlyRoute"
 import LandingPage from "../../routes/LandingPage/LandingPage"
 import WorkoutPage from "../../routes/WorkoutPage/WorkoutPage"
-import WorkoutListPage from "../../routes/WorkoutPage/WorkoutPage"
+import WorkoutListPage from "../../routes/WorkoutListPage/WorkoutListPage"
+import WorkoutEntryPage from "../../routes/WorkoutEntryPage/WorkoutEntryPage"
 import AboutPage from "../../routes/AboutPage/AboutPage"
 import StaffPage from "../../routes/StaffPage/StaffPage"
 import NutritionPage from "../../routes/NutritionPage/NutritionPage"
@@ -94,13 +95,15 @@ class App extends Component {
 						<PublicOnlyRoute path={"/login"} component={LoginPage} />
 						<PublicOnlyRoute path={"/register"} component={RegistrationPage} />
 						<PrivateRoute
-							path={"/workoutofday/:workoutofdayId"}
+							path={"/workout/:workoutId"}
 							component={WorkoutPage}
 						/>
-						<PublicOnlyRoute path={"/workoutofday"} component={WorkoutPage} />
+
 						<PublicOnlyRoute path={"/about"} component={AboutPage} />
 						<PublicOnlyRoute path={"/nutrition"} component={NutritionPage} />
 						<PublicOnlyRoute path={"/staff"} component={StaffPage} />
+						<PrivateRoute path={"/workoutentry"} component={WorkoutEntryPage} />
+						<PrivateRoute path={"/workoutlist"} component={WorkoutListPage} />
 						<Route component={NotFoundPage} />
 					</Switch>
 				</main>

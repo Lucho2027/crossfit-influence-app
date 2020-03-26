@@ -55,7 +55,7 @@ export default class AboutPage extends Component {
 					</header>
 					<form className="contact-us-form">
 						<div>
-							<label forHtml="first-name">First name</label>
+							<label forhtml="first-name">First name</label>
 							<input
 								placeholder="First Name"
 								type="text"
@@ -64,7 +64,7 @@ export default class AboutPage extends Component {
 							/>
 						</div>
 						<div>
-							<label forHtml="last-name">Last name</label>
+							<label forhtml="last-name">Last name</label>
 							<input
 								type="text"
 								name="last-name"
@@ -73,15 +73,15 @@ export default class AboutPage extends Component {
 							/>
 						</div>
 						<div>
-							<label forHtml="username">Email</label>
+							<label forhtml="username">Email</label>
 							<input type="text" name="username" id="username" />
 						</div>
 						<div>
-							<label forHtml="subject">Subject</label>
+							<label forhtml="subject">Subject</label>
 							<input type="text" name="subject" id="subject" />
 						</div>
 						<div>
-							<label forHtml="message">Message</label>
+							<label forhtml="message">Message</label>
 							<input type="text" name="message" id="message" />
 						</div>
 						<button type="submit">Send message</button>
