@@ -32,16 +32,27 @@ export default class Header extends Component {
     const { isNavOpen } = this.state;
     return (
       <div className={`menu-items ${isNavOpen ? "show" : "hide"}`}>
-        <Link onClick={this.handleLogoutClick} to="/">
-          Logout
-        </Link>
-
         <Link onClick={this.handleClick.bind(this)} to="/workoutentry">
           Workout Entry
         </Link>
 
         <Link onClick={this.handleClick.bind(this)} to="/workoutlist">
-          Previous Workout
+          Workout History
+        </Link>
+
+        <Link onClick={this.handleClick.bind(this)} to="/about">
+          About
+        </Link>
+
+        <Link onClick={this.handleClick.bind(this)} to="/nutrition">
+          Influence Nutrition
+        </Link>
+
+        <Link onClick={this.handleClick.bind(this)} to="/staff">
+          Staff
+        </Link>
+        <Link onClick={this.handleLogoutClick} to="/">
+          Logout
         </Link>
       </div>
     );
@@ -56,7 +67,7 @@ export default class Header extends Component {
         </Link>
 
         <Link onClick={this.handleClick.bind(this)} to="/nutrition">
-          Nutrition-n-Cross-Fit
+          Influence Nutrition
         </Link>
 
         <Link onClick={this.handleClick.bind(this)} to="/staff">
@@ -79,9 +90,7 @@ export default class Header extends Component {
       <div className="nav-bar">
         <nav className="Header">
           <h1>
-            <Link onClick={this.handleClick.bind(this)} to="/">
-              Influence
-            </Link>
+            <Link to="/">CrossFit Influence</Link>
           </h1>
           <div className="menu-button">
             <HamburgerButton

@@ -23,12 +23,20 @@ ul {
 
 .App {
   height: 100vh;
-
   margin: 0 auto;
 }
 
 .App__main {
   height: 100vh;
-  overflow: auto;
-  margin-top: 10px;
+}
+
+@media screen and (min-width: 600px) {
+  .App {
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .App__main {
+    height: 100%;
+  }
 }

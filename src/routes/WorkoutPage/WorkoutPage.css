@@ -41,3 +41,17 @@
   font-weight: bold;
   text-align: right;
 }
+
+.work-out-page {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.CommentForm {
+  padding: 1rem;
+}

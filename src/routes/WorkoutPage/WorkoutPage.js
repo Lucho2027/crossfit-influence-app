@@ -40,7 +40,7 @@ export default class WorkoutPage extends Component {
   renderWorkout() {
     const { workout, comments } = this.context;
     return (
-      <>
+      <div className="work-out-page">
         <h2>{workout.title}</h2>
         <p>
           <WorkoutStyle workout={workout} />
@@ -58,7 +58,7 @@ export default class WorkoutPage extends Component {
         <Button onClick={this.handleDelete}> Delete</Button>
         <WorkoutComments comments={comments} />
         <CommentForm />
-      </>
+      </div>
     );
   }
 

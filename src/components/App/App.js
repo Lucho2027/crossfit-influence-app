@@ -100,9 +100,9 @@ class App extends Component {
               component={WorkoutPage}
             />
 
-            <PublicOnlyRoute path={"/about"} component={AboutPage} />
-            <PublicOnlyRoute path={"/nutrition"} component={NutritionPage} />
-            <PublicOnlyRoute path={"/staff"} component={StaffPage} />
+            <Route path={"/about"} component={AboutPage} />
+            <Route path={"/nutrition"} component={NutritionPage} />
+            <Route path={"/staff"} component={StaffPage} />
             <PrivateRoute path={"/workoutentry"} component={WorkoutEntryPage} />
             <PrivateRoute path={"/workoutlist"} component={WorkoutListPage} />
             <Route component={NotFoundPage} />

@@ -1,0 +1,21 @@
+.RegistrationForm {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.registration-header {
+  text-align: center;
+}
+@media screen and (min-width: 1000px) {
+  .RegistrationForm {
+    margin-bottom: 45vh;
+    font-size: 2rem;
+  }
+  .registration-header h2 {
+    text-align: center;
+    font-size: 213rem;
+  }
+}

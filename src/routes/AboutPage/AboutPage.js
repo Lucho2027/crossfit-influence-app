@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Section } from "../../components/Utils/Utils";
+import "./AboutPage.css";
 
 export default class AboutPage extends Component {
   static defaultProps = {
@@ -12,41 +13,40 @@ export default class AboutPage extends Component {
   render() {
     return (
       <Section>
-        <section>
-          <header>
-            <h3>About CrossFit Influence</h3>
-          </header>
-
-          <p>
+        <div className="image-container">
+          <h1>About Us</h1>
+          <h2>
             {" "}
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            sem dui, commodo non tortor eu, ullamcorper elementum enim. Fusce ac
-            ligula quis felis aliquet lacinia. Curabitur vulputate vitae risus
-            vitae venenatis. Nunc eu nisl lectus. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Maecenas tristique sapien ac justo
-            vestibulum posuere. Nunc dapibus neque quis efficitur aliquam. Morbi
-            nec nulla ipsum. Vivamus dictum sagittis massa at tincidunt..
-          </p>
+            We are here to help you achieve your goals. Whether it is to go back
+            get back in shape or to learn new excercises. We will make sure to
+            work on getting you started on the form of the excercise.{" "}
+          </h2>
+        </div>
 
-          <h4>CrossFit Influence</h4>
+        <div className="location-container">
+          <h4>We Are Located at:</h4>
           <p>708 Walnut Circle</p>
-          <br />
+
           <p>Wapella, IL. 61777</p>
-          <br />
+
           <p>(Directly off Interstate 51)</p>
-          <br />
-
-          <h4>Kelly Rempe</h4>
-          <p>217-433-0669</p>
-          <br />
-          <p>kelly.crossfitinfluence@hotmail.com</p>
-          <br />
-
-          <h4>Brian Rempe</h4>
-          <p>217-620-3962</p>
-          <br />
-          <p>brian.crossfitinfluence@hotmail.com</p>
-        </section>
+        </div>
+        <div className="contact-container">
+          <div className="contact-container-1">
+            <h4>Kelly Rempe</h4>
+            <p>217-433-0669</p>
+            <a href="mailto:kelly.crossfitinfluence@hotmail.com">
+              <i className="fa fa-envelope"></i>
+            </a>
+          </div>
+          <div className="contact-container-2">
+            <h4>Brian Rempe</h4>
+            <p>217-620-3962</p>
+            <a href="mailto:brian.crossfitinfluence@hotmail.com">
+              <i className="fa fa-envelope"></i>
+            </a>
+          </div>
+        </div>
       </Section>
     );
   }

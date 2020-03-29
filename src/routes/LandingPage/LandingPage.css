@@ -1,9 +1,10 @@
 .header-container {
-  background: url("https://i.imgur.com/JYXF6eo.jpg");
+  background: url("https://i.imgur.com/2FQxdB0.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
+
   flex-direction: column;
   justify-content: center;
   width: 100%;
@@ -22,7 +23,7 @@
   line-height: 1rem;
 }
 .memberships-container {
-  padding-top: 60px;
+  padding-top: 5vh;
   padding-bottom: 60px;
   padding-left: 20px;
   padding-right: 20px;
@@ -55,7 +56,7 @@
   color: #121212;
 }
 .background-2 {
-  background: url("https://i.imgur.com/DTbz0mW.jpg");
+  background: url("https://i.imgur.com/Xe0mrNM.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -63,7 +64,7 @@
   flex-direction: column;
   width: 100%;
   padding: 11vh;
-  height: 80vh;
+  height: 100vh;
 }
 .background-2 h1 {
   font-size: 2.5rem;
@@ -72,7 +73,7 @@
 }
 
 .background-3 {
-  background: url("https://i.imgur.com/Hs6GX1L.jpg");
+  background: url("https://i.imgur.com/PWQO2mS.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -86,4 +87,80 @@
   font-size: 2.5rem;
   color: #ebeff2;
   line-height: 3rem;
+}
+@media screen and (min-width: 600px) {
+  .header-container {
+    flex-grow: 1;
+  }
+  .header-container h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+  .header-content {
+    color: #ebeff2;
+    font-size: 1.3rem;
+    word-wrap: break-word;
+    line-height: 2rem;
+  }
+  .memberships-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .memberships-header {
+    width: 70%;
+  }
+
+  .memberships-container p {
+    width: 30%;
+    font-size: 1.1rem;
+  }
+  .pricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .background-2 {
+    display: flex;
+    justify-content: center;
+  }
+  .background-2 h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+  .background-3 {
+    display: flex;
+    justify-content: center;
+  }
+  .background-3 h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+  .schedule-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .memberships-container {
+    justify-content: space-between;
+  }
+  .memberships-container h3 {
+    font-size: 4rem;
+  }
+
+  .memberships-container p {
+    width: 40%;
+    font-size: 1.2rem;
+  }
+  .pricing h4 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  .schedule-container h3 {
+    font-size: 4rem;
+  }
 }

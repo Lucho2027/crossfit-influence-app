@@ -1,0 +1,15 @@
+.trainer-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.trainer-content-1,
+.trainer-content-2,
+.trainer-content-3,
+.trainer-content-4,
+.trainer-content-5 {
+  text-align: left;
+}

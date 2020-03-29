@@ -22,6 +22,7 @@
 
 .Textarea {
   resize: vertical;
+  font-size: 1rem;
 }
 
 .Button {
@@ -53,6 +54,7 @@
 .Section {
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 15vh;
 }
 .Section--list {
   margin-left: 10px;
