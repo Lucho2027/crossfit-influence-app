@@ -2,8 +2,17 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0;
   text-align: center;
   align-items: center;
+  width: 100%;
+}
+.trainer-1,
+.trainer-2,
+.trainer-3,
+.trainer-4,
+.trainer-5 {
+  width: 100%;
 }
 
 .trainer-content-1,
@@ -12,4 +21,76 @@
 .trainer-content-4,
 .trainer-content-5 {
   text-align: left;
+  padding: 10px;
+}
+img {
+  display: flex;
+  width: 320px;
+  padding: 10px;
+}
+
+@media screen and (min-width: 600px) {
+  .trainer-page {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  .trainer-img-1,
+  .trainer-img-2,
+  .trainer-img-3,
+  .trainer-img-4,
+  .trainer-img-5 {
+    padding-left: 3px;
+  }
+
+  img {
+    display: flex;
+    width: 320px;
+    padding-left: 5px;
+  }
+  .trainer-1,
+  .trainer-2,
+  .trainer-3,
+  .trainer-4,
+  .trainer-5 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .trainer-content-1,
+  .trainer-content-2,
+  .trainer-content-3,
+  .trainer-content-4,
+  .trainer-content-5 {
+    text-align: left;
+    margin: 0;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .trainer-img-1,
+  .trainer-img-2,
+  .trainer-img-3,
+  .trainer-img-4,
+  .trainer-img-5 {
+    padding-left: 10px;
+  }
+
+  img {
+    display: flex;
+    width: 320px;
+    padding-left: 5px;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
 }
