@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url("https://fonts.googleapis.com/css?family=Raleway");
 
 * {
   box-sizing: border-box;
@@ -7,35 +7,22 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: futura-pt, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-h1, h2, h3, h4, h5, h6 {
-  color: #222;
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #011526;
 }
 
 p {
-  color: #555;
+  color: #011f26;
 }
 
 .blue {
-  color: #477ACC;
-}
-
-.yellow {
-  color: #EAC435;
-}
-
-.green {
-  color: #09a55e;
-}
-
-.red {
-  color: #CA1551;
-}
-
-.orange {
-  color: #FB4D3D;
+  color: #011526;
 }
