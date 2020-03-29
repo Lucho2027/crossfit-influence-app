@@ -35,7 +35,7 @@ From the history of workouts posted users can go into the workout page and comme
 
 ## Live Site
 
-You can find CrossFit Influence at
+You can find CrossFit Influence at: https://crossfit-influence-app.now.sh/
 
 ## Technical
 
